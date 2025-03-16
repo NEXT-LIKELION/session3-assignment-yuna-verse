@@ -1,0 +1,505 @@
+* {
+    font-size: 15px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 242px 1fr;
+    grid-template-rows: 50px 50px 1fr;
+    grid-template-areas:
+        "header header"
+        "menu bar"
+        "menu main";
+}
+
+.header {
+    grid-area: header;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 4px 20px 4px 18px;
+    background-color: white;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header1 {
+    gap: 26px;
+}
+
+.header2 {
+    display: flex;
+    width: 50%;
+}
+
+.header3 {
+    gap: 18px;
+}
+
+.menu-button {
+    width: 20px;
+    height: 20px;
+}
+
+.logo {
+    height: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 40vw;
+    max-width: 500px;
+    height: 40px;
+    box-shadow: 0 0 0 1px lightgray inset;
+}
+
+.search-box img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-box input {
+    border: 0;
+    margin-left: 15px;
+    width: 88%;
+}
+
+.keyboard {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.search-button {
+    width: 60px;
+    height: 40px;
+    vertical-align: middle;
+    border: 1px solid lightgray;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.search-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.voice {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 0;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.voice img {
+    width: 22px;
+    height: 22px;
+}
+
+.create {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 30px;
+    border: 0;
+}
+
+.create img {
+    width: 28px;
+    height: 28px;
+    padding-left: 3px;
+}
+
+.create p {
+    padding-right: 9px;
+}
+
+.noti {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+.profile {
+    width: 45px;
+    height: 45px;
+    margin-right: 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 200px;
+    padding-top: 50px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 10px;
+}
+
+.my-page {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.my-page img {
+    width: 25px;
+}
+
+.my-page p {
+    font-size: 14px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.menu-item img {
+    width: 25px;
+}
+
+.menu-item p {
+    font-size: 14px;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-item-X {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.menu-item-X img {
+    width: 25px;
+}
+
+.menu-item-X p {
+    font-size: 14px;
+}
+
+.menu-item-X:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-section-title {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.subscription {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.bar {
+    grid-area: bar;
+    display: flex;
+    gap: 15px;
+    width: 1fr;
+    height: 50px;
+    position: fixed;
+    top: 70px;
+    left: 250px;
+    z-index: 2;
+    background-color: white;
+}
+
+.bar div {
+    background-color: #ededed;
+    width: fit-content;
+    height: fit-content;
+    vertical-align: middle;
+    padding: 8px 12px 8px 12px;
+    font-size: 13.5px;
+    border-radius: 8px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    gap: 15px;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 13px;
+    object-fit: cover;
+}
+
+.video-info {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.channel-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.row-1-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.row-2-channel {
+    font-size: 14px;
+    color: gray;
+}
+
+.row-3 {
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    gap: 5px;
+}
+
+@media (min-width: 1537px) {
+    .my-page {
+        display: none;
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 28px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1536px) {
+    .my-page {
+        display: none;
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 28px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 50px 50px 1fr;
+        grid-template-areas:
+            "header header"
+            "menu bar"
+            "menu main";
+    }
+
+    .header2 {
+        display: flex;
+        width: 40%;
+    }
+
+    .bar {
+        left: 108px;
+    }
+
+    .my-page {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .menu-section-title {
+        display: none;
+    }
+
+    .menu {
+        width: 75px;
+    }
+
+    .menu p {
+        font-size: 11px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .menu-item-X {
+        display: none;
+    }
+
+    .section-3 {
+        display: none;
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 28px;
+        margin-right: 15px;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 50px 50px 1fr;
+        grid-template-areas:
+            "header header"
+            "menu bar"
+            "menu main";
+    }
+
+    .header2 {
+        display: flex;
+        width: 40%%;
+    }
+
+    .bar {
+        left: 108px;
+    }
+
+    .my-page {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .menu-section-title {
+        display: none;
+    }
+
+    .menu {
+        width: 75px;
+    }
+
+    .menu p {
+        font-size: 11px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .menu-item-X {
+        display: none;
+    }
+
+    .section-3 {
+        display: none;
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 28px;
+        margin-right: 15px;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+    body {
+        display: grid;
+        grid-template-columns: 15px 1fr;
+        grid-template-rows: 50px 50px 1fr;
+        grid-template-areas:
+            "header header"
+            "menu bar"
+            "menu main";
+    }
+
+    .header2 {
+        display: flex;
+        width: 30%;
+    }
+
+    .bar {
+        left: 25px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 28px;
+        margin-right: 15px;
+    }
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: lightgray;
+}
